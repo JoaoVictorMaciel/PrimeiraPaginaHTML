@@ -5,16 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <a href="index.html">Menu</a> <br>
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/_QzW0bjAsPU" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
+    <h1 class="p2">Seja Sócio</h1>
+    <form>
+        <label class="p2" for="nome">Nome Completo:</label> <br>
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div class="p2" id='txtNome'></div>
+        <br>
+        <label class="p2" for="usuario">Nome Usuário:</label> <br>
+        <input class="p2" type="text" id="usuario" onkeyup='validaUsuario()'>
+        <div class="p2" id='txtUsuario'></div>
+        <br>
+        <label class="p2" for="email">E-mail:</label> <br>
+        <input class="p2" type="email" id="email" onkeyup='validaEmail()'>
+        <div class="p2" id='txtEmail'></div>
+        <br>
+        <label class="p2" for="senha">Senha:</label> <br>
+        <input class="p2" type="password" id="senha" onkeyup="validaSenha()">
+        <div class="p2" id='txtSenha'></div>
+        <br>
+        <label class="p2" for="confSenha">Confirme sua senha:</label> <br>
+        <input class="p2" type="password" id="confSenha" onkeyup="confirmaSenha()">
+        <div class="p2" id='txtConfSenha'></div>
+        <button onclick='enviar()'>Enviar</button>
+    </form>
+    <footer><p class="center color p2"> Todos os direitos reservados a João Victor Maciel &copy</p></footer>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

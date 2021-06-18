@@ -40,9 +40,6 @@
     color: gray;
 }
 
-.br-50 {
-    border-radius: 50%;
-}
 
 .wh-200 {
     max-width: 400px;
@@ -58,15 +55,18 @@
 
 .transit-opac:hover {
     opacity: 1 ;
+     z-index: 1;
 }o
 
 .transit-size {
-    transition: transform 0.8s;
+    transition: transform 1.2s;
+   
 }
 
 .transit-size:hover {
     transform: scale(1.5);
 }
+
 .wh-italy {
     max-width: 200px;
     max-height: 200px;
@@ -75,7 +75,7 @@
 }
 
 .back {
-    background-color: rgba(0,100,172,255);
+    background-image: linear-gradient(to bottom, #0064ac,#002EAC);
     background-repeat: no-repeat center center;
     background-size: cover;
     width: 100%;
@@ -84,10 +84,6 @@
     z-index: 1;
 }
 
-.back h1 {
-        position: relative;
-        z-index: 2;
-}
 
 .back .opac {
     content: "";
