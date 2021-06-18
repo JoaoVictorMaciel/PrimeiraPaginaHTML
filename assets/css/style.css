@@ -1,0 +1,111 @@
+/*Estile da pagina index.html*/
+.center {
+    text-align: center;
+    
+}
+
+.container-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #D1D1D1;
+}
+
+.container-jogadores {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #D1D1D1;
+}
+
+#menu li a:hover {
+    color: gray;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh-200 {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    opacity: .50;
+}
+
+.transit-opac {
+    transition: opacity 0.8s ;
+}
+
+.transit-opac:hover {
+    opacity: 1 ;
+}o
+
+.transit-size {
+    transition: transform 0.8s;
+}
+
+.transit-size:hover {
+    transform: scale(1.5);
+}
+.wh-italy {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.back {
+    background-color: rgba(0,100,172,255);
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 1024px;
+    position: relative;
+    z-index: 1;
+}
+
+.back h1 {
+        position: relative;
+        z-index: 2;
+}
+
+.back .opac {
+    content: "";
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px
+}
+
+
+.color {
+    color: #eeeeee;
+}
+
+.p2 {
+    font-family: Helvetica, Helvetica, sans-serif;
+  }
+
