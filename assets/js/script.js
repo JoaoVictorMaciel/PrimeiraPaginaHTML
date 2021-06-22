@@ -1,3 +1,5 @@
+/* Script do Form */
+
 let nome = window.document.getElementById('nome')
 let usuario = window.document.getElementById('usuario')
 let email = document.querySelector('#email')
@@ -73,3 +75,6 @@ function enviar() {
         alert ('Preencha o formulário corretamente.')
     }
 }
+
+/* Script do Home */
+

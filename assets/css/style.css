@@ -1,23 +1,42 @@
 /*Estile da pagina index.html*/
 .center {
     text-align: center;
-    
 }
-
+.colorNav {
+    background-color: #dadada;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
 .container-logo {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3%;
+    
 }
 
 .container-titulo {
+    display: flex !important; 
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #D1D1D1;
+    width: 100vw;
+    margin-bottom: 3%;
+}
+
+.container-text {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: #D1D1D1;
+    margin-bottom: 3%;
 }
 
 .container-jogadores {
@@ -25,6 +44,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 }
 
 #menu li {
@@ -49,23 +69,96 @@
     opacity: .50;
 }
 
+.wh-1000 {
+    max-width: 600px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+.textoImg {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+}
+
 .transit-opac {
     transition: opacity 0.8s ;
+    z-index: 2;
 }
 
 .transit-opac:hover {
     opacity: 1 ;
-     z-index: 1;
-}o
+    position: sticky;
+}
 
 .transit-size {
-    transition: transform 1.2s;
-   
+    transition: transform 0.8s;
+    z-index: 1;
+}
+
+.transit-size:active {
+    opacity: 0.5;
+    transition: 0.2s;
+    max-width: 380px;
+    max-height: 380px;
+    width: auto;
+    height: auto;
 }
 
 .transit-size:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    z-index: 2;
+    cursor: pointer;
 }
+
+.transit-size2:active {
+    opacity: 0.5;
+    transition: 0.2s;
+    max-width: 580px;
+    max-height: 580px;
+    width: auto;
+    height: auto;
+}
+
+.transit-size2 {
+    transition: transform 0.8s;
+    z-index: 1;
+    position: relative;
+
+}
+
+.transit-size2:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.transit-size3:active {
+    opacity: 0.5;
+    transition: 0.2s;
+    max-width: 180px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+}
+
+.transit-size3 {
+    transition: transform 0.8s;
+    z-index: 1;
+    position: relative;
+
+}
+
+.transit-size3:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    cursor: pointer;
+}
+
 
 .wh-italy {
     max-width: 200px;
@@ -74,18 +167,26 @@
     height: auto;
 }
 
+.wh-italy2 {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
 .back {
     background-image: linear-gradient(to bottom, #0064ac,#002EAC);
     background-repeat: no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 1024px;
+    height: 100%;
     position: relative;
     z-index: 1;
+    margin: 0;
+    padding-top: 3%;
 }
 
 
-.back .opac {
+/*.back .opac {
     content: "";
     background-size: cover;
     z-index: 1;
@@ -94,14 +195,41 @@
     right: 0px;
     bottom: 0px;
     left: 0px
-}
+}*/
 
-
-.color {
-    color: #eeeeee;
-}
 
 .p2 {
-    font-family: Helvetica, Helvetica, sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.6em;
+    background: -webkit-linear-gradient(#eee, rgb(216, 216, 216));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
+
+.p3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8em;
+    background: -webkit-linear-gradient(#eee, rgb(216, 216, 216));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.p4 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    background: -webkit-linear-gradient(#0064ac,#002EAC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+    margin: 0 !important;
+}
+
+footer {
+    margin: 0 !important;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
 
