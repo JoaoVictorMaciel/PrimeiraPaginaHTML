@@ -2,13 +2,16 @@
 .center {
     text-align: center;
 }
+
 .colorNav {
     background-color: #dadada;
 }
+
 body {
     padding: 0;
     margin: 0;
 }
+
 .container-logo {
     display: flex;
     flex-flow: row wrap;
@@ -25,7 +28,6 @@ body {
     align-items: center;
     text-decoration: none;
     color: #D1D1D1;
-    width: 100vw;
     margin-bottom: 3%;
 }
 
@@ -37,6 +39,7 @@ body {
     text-decoration: none;
     color: #D1D1D1;
     margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .container-jogadores {
@@ -173,6 +176,20 @@ body {
     width: auto;
     height: auto;
 }
+
+.wh-footer {
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    filter: invert(1);
+    justify-content: center;
+}
+
+.colorBran {
+    background: -webkit-linear-gradient(#eee, rgb(216, 216, 216));
+}
+
 .back {
     background-image: linear-gradient(to bottom, #0064ac,#002EAC);
     background-repeat: no-repeat center center;
@@ -184,19 +201,6 @@ body {
     margin: 0;
     padding-top: 3%;
 }
-
-
-/*.back .opac {
-    content: "";
-    background-size: cover;
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px
-}*/
-
 
 .p2 {
     font-family: 'Work Sans', sans-serif;
@@ -222,6 +226,14 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.p5 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.7em;
+    background: -webkit-linear-gradient(#eee, rgb(216, 216, 216));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 p {
     margin: 0 !important;
 }
@@ -230,6 +242,26 @@ footer {
     margin: 0 !important;
     padding: 0;
 }
+
+.social-media {
+    height: 64px;
+    width: 64px;
+    width: auto;
+    height: auto;
+    background: -webkit-linear-gradient(#eee, rgb(216, 216, 216));
+}
+
+.div.container-titulo {
+    margin: 0 !important;
+    padding: 0;
+}
+
+.div.container-text {
+    margin: 0 !important;
+    padding: 0;
+}
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
 

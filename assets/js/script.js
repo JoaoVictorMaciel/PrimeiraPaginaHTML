@@ -4,7 +4,7 @@ let nome = window.document.getElementById('nome')
 let usuario = window.document.getElementById('usuario')
 let email = document.querySelector('#email')
 var senha = document.querySelector('#senha')
- confSenha = document.querySelector('#txtConfSenha')
+var confSenha = document.querySelector('#txtConfSenha')
 
 function validaNome() {
     let txtNome = document.querySelector('#txtNome')
@@ -54,7 +54,7 @@ function validaSenha() {
     }
 }
 
-/* Confirmação de Senhas - Ainda em fase de correção
+
 function confirmaSenha() {
     let txtConfSenha = document.querySelector('#txtConfSenha')
     let txtSenha = document.querySelector('#txtSenha')
@@ -66,7 +66,7 @@ function confirmaSenha() {
         txtConfSenha.style.color = 'green'
         confSenhaOk = true
     }
-}*/
+}
 
 function enviar() {
     if (nomeOk == true && usuarioOk == true && emailOk == true && senhaOk == true) {
